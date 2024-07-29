@@ -1,13 +1,322 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p, li {
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+  margin: 0 0 10px;
+}
+.index, .search, .index, .home-info, .browse {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 100px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: auto;
+  border: 2px #343a3b;
+  border-radius: 4px;
+  background-color:  #d8e1e3;
+  color: #343a3b;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color:  #d8e1e3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border:1px solid #333;
+}
+
+/* NavBar */
+.NavBar {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #d8e1e3;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #343a3b;
+  position: fixed;
+  top: 0;
+}
+
+.NavBar h1 {
+  color: #343a3b;
+  font-size: 35px;
+}
+
+.NavBar .links {
+  margin-left: auto;
+}
+
+.NavBar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #247478;
+  font-size: 20px;
+}
+
+.NavBar a:hover {
+  text-decoration: underline;
+}
+
+
+/* Home Page */
+.home-info {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 100px;
+}
+
+.home-info * {
+  padding: 10px 0;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-message {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.features {
+  padding: 0;
+}
+
+.features ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.features ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+}
+
+.features h4 {
+  margin-top: 10px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 15px;
+}
+
+/* Index */
+
+.index-directions {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+.steps {
+  margin-top: 20px;
+}
+
+.step-1, .step-2, .log-output, .index-results, .save {
+  margin-bottom: 20px;
+}
+
+.input-directory, .samples, .dropped, .valid, .processed, .generated {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.output-box {
+  width: 98%;
+  height: 100px;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.line {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.help h3 {
+  margin-top: 20px;
+}
+
+.help p {
+  margin-bottom: 20px;
+}
+
+
+/* Searching */
+
+.search {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 100px;
+}
+
+.instructions {
+  margin-left: 20px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions .first {
+  padding-top: 0;
+}
+
+.select {
+  margin-top: 20px;
+}
+
+.select .dir {
+  margin-bottom: 20px;
+}
+
+.directory, .allele, .pos, .sampler, .chrom, .pattern{
+  width: calc(100% - 20px);
+  max-width: 300px;
+  padding: 8px;
+  margin-top: 10px; /* Increased margin-top for input elements */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.details {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results h2 {
+  margin-bottom: 10px;
+}
+
+.details, .save {
+  margin-bottom: 20px;
+}
+
+.line {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.help h3 {
+  margin-top: 20px;
+}
+
+.help p {
+  margin-bottom: 20px;
+}
+
+input, select{
+  margin-left: 5px;
+}
+
+/* Browsing */
+
+
+.step-instruct {
+  margin-bottom: 20px;
+}
+
+.step-instruct h2 {
+  margin-top: 20px;
+}
+
+.step-instruct label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.select-samp, .select-chrom, .select-all {
+  width: calc(100% - 20px);
+  max-width: 300px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+
+.browser-display {
+  margin-top: 30px;
+}
+
+.browser-display h2 {
+  margin-bottom: 10px;
+}
+
+.browse-w {
+  width: calc(100% - 20px);
+  height: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
 }
