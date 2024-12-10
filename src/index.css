@@ -1,322 +1,253 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+/* CSS for Animations */
+.AboutMePage {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.AboutMePageContent {
+  animation: slideUp 1s ease-in-out;
+}
+
+
+.AboutMeTitle, .ProjectTitle {
+  animation: slideLeft 0.8s ease-out;
+}
+
+.IntroBio, .BackgroundBio, .Projects {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+body {
   margin: 0;
-  padding:0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-p, li {
-  color: #666;
-  line-height: 1.6;
-  margin: 0 0 10px;
-}
-
-h1, h2, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
   color: #333;
-  margin: 0 0 10px;
-}
-.index, .search, .index, .home-info, .browse {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-top: 100px;
+  background-color: #f7f7f7;
 }
 
-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px 0;
-  width: auto;
-  border: 2px #343a3b;
-  border-radius: 4px;
-  background-color:  #d8e1e3;
-  color: #343a3b;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-button:hover {
-  background-color:  #d8e1e3;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border:1px solid #333;
-}
-
-/* NavBar */
+/* Nav Bar */
 .NavBar {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #d8e1e3;
-  display: flex;
-  width: 100%;
-  padding: 20px;
   align-items: center;
-  box-sizing: border-box;
-  border: 1px solid #343a3b;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 2px solid #333;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-}
-
-.NavBar h1 {
-  color: #343a3b;
-  font-size: 35px;
-}
-
-.NavBar .links {
-  margin-left: auto;
-}
-
-.NavBar a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #247478;
-  font-size: 20px;
+  width: 100%;
+  z-index: 1000;
 }
 
 .NavBar a:hover {
   text-decoration: underline;
 }
 
+.Link {
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 10px 15px;
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
 
-/* Home Page */
-.home-info {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+.Link:hover {
+  color: #6a1b9a;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  margin-right: 50px;
+}
+
+/* About Me Page */
+.AboutMePage, .CurrentInterestPage {
+  background-color: #ecbff5;
+  margin-top: 80px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-top: 100px;
 }
 
-.home-info * {
-  padding: 10px 0;
+.PicOfMe, .PicOfFamily, .Art, .Feather, .Plant, .Billie, .City, .Evey, .Myka1, .Myka2 {
+  animation: zoomIn 1s ease-in-out;
+  margin-top: 45px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.welcome {
-  text-align: center;
-  margin-bottom: 40px;
+.Background {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space the image and the text apart */
+  padding: 20px 0;
 }
 
-.welcome-message {
-  font-size: 1.2em;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align: justify;
+.BackgroundBio {
+  width: 50%; /* You can adjust the width to control the space for text */
+  padding-left: 20px; /* Optional: Add some padding for spacing */
 }
 
-.about {
-  margin-top: 20px;
+.PicOfFamily {
+  width: 40%; /* Adjust image width to fit the layout */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the space without distortion */
 }
 
-.features {
-  padding: 0;
+.Intro, .Background, .ArtAndDescription {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-.features ol {
-  list-style-type: decimal;
-  margin-left: 20px;
+.IntroBio {
+  margin: 20px;
+  margin-right: 0;
 }
 
-.features ul {
-  list-style-type: disc;
-  margin-left: 40px;
-  padding: 0;
-}
-
-.features ul li {
-  margin-bottom: 10px;
-}
-
-.features h4 {
-  margin-top: 10px;
-}
-
-ol {
-  padding-left: 20px;
-}
-
-ol li {
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-decoration: underline;
+  font-size: 36px;
+  color: #4a148c;
   margin-bottom: 15px;
 }
 
-/* Index */
-
-.index-directions {
-  font-size: 1.2em;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align: justify;
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
 }
 
-.steps {
-  margin-top: 20px;
-}
-
-.step-1, .step-2, .log-output, .index-results, .save {
-  margin-bottom: 20px;
-}
-
-.input-directory, .samples, .dropped, .valid, .processed, .generated {
-  width: 100%;
-  max-width: 300px;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-.output-box {
-  width: 98%;
-  height: 100px;
-  padding: 8px;
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-.line {
-  margin: 20px 0;
-  border: none;
-  height: 1px;
-  background-color: #ddd;
-}
-
-.help h3 {
-  margin-top: 20px;
-}
-
-.help p {
-  margin-bottom: 20px;
+.BackgroundBio {
+  width: 50%;
 }
 
 
-/* Searching */
-
-.search {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-top: 100px;
-}
-
-.instructions {
-  margin-left: 20px;
-}
-
-.instructions ol {
-  padding-left: 20px;
-}
-
-.instructions .first {
-  padding-top: 0;
-}
-
-.select {
-  margin-top: 20px;
-}
-
-.select .dir {
-  margin-bottom: 20px;
-}
-
-.directory, .allele, .pos, .sampler, .chrom, .pattern{
-  width: calc(100% - 20px);
-  max-width: 300px;
-  padding: 8px;
-  margin-top: 10px; /* Increased margin-top for input elements */
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-.details {
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
-.search-results {
-  margin-top: 20px;
-}
-
-.search-results h2 {
+.ProjectTitle {
+  text-decoration: underline;
+  font-size: 24px;
+  color: #4a148c;
   margin-bottom: 10px;
 }
 
-.details, .save {
-  margin-bottom: 20px;
-}
-
-.line {
-  margin: 20px 0;
-  border: none;
-  height: 1px;
-  background-color: #ddd;
-}
-
-.help h3 {
-  margin-top: 20px;
-}
-
-.help p {
-  margin-bottom: 20px;
-}
-
-input, select{
-  margin-left: 5px;
-}
-
-/* Browsing */
-
-
-.step-instruct {
-  margin-bottom: 20px;
-}
-
-.step-instruct h2 {
-  margin-top: 20px;
-}
-
-.step-instruct label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.select-samp, .select-chrom, .select-all {
-  width: calc(100% - 20px);
-  max-width: 300px;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-
-.browser-display {
+.Projects {
+  text-align: center;
   margin-top: 30px;
 }
 
-.browser-display h2 {
-  margin-bottom: 10px;
+.ArtTitle {
+  padding-top: 50px;
 }
 
-.browse-w {
-  width: calc(100% - 20px);
-  height: 200px;
-  padding: 10px;
+.Young {
   margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
+}
+
+/* Gallery Layout for Sketches */
+.SketchesGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum size */
+  gap: 20px; /* Space between images */
+  margin-top: 0px;
+}
+
+.SketchesGallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for image depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+
+}
+
+.SketchesGallery img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Styling for individual sketch descriptions */
+.SketchDescription {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.SketchDescription h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4a148c; /* Title color */
+}
+
+.SketchDescription p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.sketches {
+  margin-bottom: 0px;
+}
+
+.description {
+  margin-left: 30px;
+}
+
+.ResumeIMG {
+  width:100%;
+  margin-top: 115px
 }

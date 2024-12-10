@@ -1,31 +1,24 @@
 import './App.css';
-import Browsing from './Browsing';
-import Home from './Home';
-import Indexing from './Indexing';
 import NavBar from './NavBar';
-import Searching from './Searching';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
+import AboutMe from './AboutMe'; // AboutMe is set as the home page
+import CurrentInterest from './CurrentInterest';
+import Resume from './Resume';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar/>
+        <NavBar />
         <div className="content">
-          <Switch>
-            <Route exact path='/'>
-              <Home/>
-            </Route>
-            <Route exact path='/Indexing'>
-              <Indexing/>
-            </Route>
-            <Route exact path='/Searching'>
-              <Searching/>
-            </Route>
-            <Route exact path='/Browsing'>
-              <Browsing/>
-            </Route>
-          </Switch>
+          <Routes>
+            {/* Set AboutMe as the home page */}
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/CurrentInterest" element={<CurrentInterest />} />
+            <Route path="/resume" element={<Resume />} />
+            {/* Add a fallback route to redirect to AboutMe */}
+            <Route path="*" element={<AboutMe />} />
+          </Routes>
         </div>
       </div>
     </Router>
