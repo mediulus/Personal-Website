@@ -50,7 +50,7 @@ const AboutMe = () => {
 
                 <div className='Projects'>
                     <h2 className='AboutMeTitle'>Projects</h2>
-                    <p className='ProjectTitle'>Training Data Visualizer</p>
+                    <a className='ProjectTitle' href = 'https://github.com/mediulus/running-project.git' target="_blank">Training Data Visualizer (Click Me)</a>
                     <p>I built a Python project to track and analyze my training 
                         progress by extracting data from my Google Sheet training 
                         log. Using gspread for data retrieval and matplotlib for 
@@ -58,7 +58,7 @@ const AboutMe = () => {
                         like distance, heart rate, and performance ratings over time.
                     </p>
                     
-                    <p className='ProjectTitle'>Personal Website</p>
+                    <a className='ProjectTitle' href = 'https://github.com/mediulus/Personal-Website.git' target="_blank" >Personal Website (Click Me)</a>
                     <p>I designed and developed this website from scratch to showcase 
                         my projects, interests, and achievements. Built with a focus 
                         on improving my web development skills, it features a responsive 
