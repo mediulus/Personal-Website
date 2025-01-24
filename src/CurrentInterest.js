@@ -12,6 +12,7 @@ import Myka1Pic from './imgs/Myka1Drawing.png';
 import Myka2Pic from './imgs/Myka2Drawing.png';
 import CityPic from './imgs/CityPainting.png';
 import YoungPic from './imgs/YoungDrawing.png';
+import KateDog from './imgs/KateDog.jpeg'
 
 const CurrentInterest = () => {
   return (
@@ -31,6 +32,16 @@ const CurrentInterest = () => {
 
         <div>
           <h2>Projects</h2>
+          <div className = 'ArtAndDescription'>
+            <img className = 'Art' src = {KateDog} alt = 'Picture of a french Bull Dog' width = '450px'/>
+            <p className = 'description'>
+              My first commisioned piece for a girl on my cross country team! Her super cute french bull dog!! 
+              I was pretty nervous going into this piece because I tend to avoid drawing fur--as I find it pretty intimidating. 
+              After lots of youtube videos and hoping for the best, I think drawing fur is rly fun (Especially because you don't
+              actually need to make sure hairs are in the right direction--you can just draw the fur in whatever way you want. As long as it is mostly
+              correct)
+            </p>
+          </div>
           <div className="ArtAndDescription">
             <img className="Art" src={ChileHousePic} alt="La Sebastiana in Chile" width="450px" />
             <p className='description'>
