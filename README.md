@@ -1,13 +1,46 @@
-# VCF Indexing, Searching, and Browsing
+# Personal Website
 
-This project is the front-end website for a back-end code written by Fernanda Sanchirico for indexing, searching, and browsing VCF files.
+My personal website, built with [React](https://react.dev/) and plain CSS. It showcases a little about me, my software projects, and my artwork.
 
-## Details
+**Live site:** https://mediulus.github.io/Personal-Website
 
-Fernanda and I were not able to connect the front-end software with the back-end software due to time constraints, so future development of this project should include way for the front end to retrieve the data from the back end code. 
+## About this project
 
-To launch this website on a local server:
+I originally built this site completely from scratch to sharpen my web development skills, hand-writing the HTML, CSS, and JavaScript myself. Later, I revamped it using [Cursor](https://cursor.com/) — refreshing the design, restructuring the components, and updating the content.
 
-In terminal, the user should run "npm run start". This command will open the web browser on the device's primary search engine.
+## Tech stack
 
-Currently, when a user inputs the directory, the input is saved; however, future developers must communicate that directory with the back end code in order to access the data and process the given request. Additionally, once the request and commands are run on that directory, the browser should retrieve that data from the back-end and then output it onto the current window. To simulate this, the code currently only outputs a string phrase. This supports functionality for the buttoms ands input boxes on the server. 
+- React
+- React Router
+- CSS
+- GitHub Pages (deployment)
+
+## Getting started
+
+Install dependencies and start the development server:
+
+```bash
+npm install
+npm start
+```
+
+This runs the app in development mode at [http://localhost:3000](http://localhost:3000).
+
+## Available scripts
+
+- `npm start` — run the app in development mode
+- `npm run build` — build the app for production into the `build` folder
+- `npm run deploy` — deploy the production build to GitHub Pages
+
+## Project structure
+
+```
+src/
+  App.js             # App shell and routing
+  NavBar.js          # Top navigation
+  AboutMe.js         # Intro, background, and projects
+  CurrentInterest.js # Artwork gallery
+  Resume.js          # Resume
+  index.css          # Global styles
+  imgs/              # Images and artwork
+```
