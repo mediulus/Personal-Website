@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Website/static/css/main.fe6a6730.css",
-    "main.js": "/Personal-Website/static/js/main.d14c710a.js",
+    "main.css": "/Personal-Website/static/css/main.04738493.css",
+    "main.js": "/Personal-Website/static/js/main.fe1a5568.js",
     "static/js/453.f88d986a.chunk.js": "/Personal-Website/static/js/453.f88d986a.chunk.js",
     "static/media/AllyDrawing.png": "/Personal-Website/static/media/AllyDrawing.cebde8e6ea3359d95671.png",
     "static/media/ThomasDrawing.png": "/Personal-Website/static/media/ThomasDrawing.7b4f1b7a1a2482b0ddb2.png",
@@ -11,6 +11,7 @@
     "static/media/Me.JPG": "/Personal-Website/static/media/Me.5fe5498eb269dc404fe6.JPG",
     "static/media/ChileHouseDrawing.jpeg": "/Personal-Website/static/media/ChileHouseDrawing.ba3c14853f84c81ad8b8.jpeg",
     "static/media/BabyMegDrawing.png": "/Personal-Website/static/media/BabyMegDrawing.926b85c76814c17a54d3.png",
+    "static/media/KateDog.jpeg": "/Personal-Website/static/media/KateDog.c10b1ff6d0bde54dee1a.jpeg",
     "static/media/BillieDrawing.jpeg": "/Personal-Website/static/media/BillieDrawing.6136c39b0369ce0bc689.jpeg",
     "static/media/ScoobyPainting.png": "/Personal-Website/static/media/ScoobyPainting.e22a0dae2f9486f057f7.png",
     "static/media/YoungDrawing.png": "/Personal-Website/static/media/YoungDrawing.84aab76a61405888f96d.png",
@@ -19,15 +20,14 @@
     "static/media/EveyDrawing.png": "/Personal-Website/static/media/EveyDrawing.86ec22cb8c9275c088a1.png",
     "static/media/Myka2Drawing.png": "/Personal-Website/static/media/Myka2Drawing.680a901d678539b7738c.png",
     "static/media/Myka1Drawing.png": "/Personal-Website/static/media/Myka1Drawing.1f1dca551ae02d09304a.png",
-    "static/media/Resume.png": "/Personal-Website/static/media/Resume.a49fa333ac81da82c8ab.png",
-    "static/media/Logo.png": "/Personal-Website/static/media/Logo.11cadc49f59861deb3c8.png",
+    "static/media/Resume.png": "/Personal-Website/static/media/Resume.96c11ab4a57451059310.png",
     "index.html": "/Personal-Website/index.html",
-    "main.fe6a6730.css.map": "/Personal-Website/static/css/main.fe6a6730.css.map",
-    "main.d14c710a.js.map": "/Personal-Website/static/js/main.d14c710a.js.map",
+    "main.04738493.css.map": "/Personal-Website/static/css/main.04738493.css.map",
+    "main.fe1a5568.js.map": "/Personal-Website/static/js/main.fe1a5568.js.map",
     "453.f88d986a.chunk.js.map": "/Personal-Website/static/js/453.f88d986a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe6a6730.css",
-    "static/js/main.d14c710a.js"
+    "static/css/main.04738493.css",
+    "static/js/main.fe1a5568.js"
   ]
 }
